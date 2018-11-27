@@ -28,7 +28,7 @@ The application requires a Tink API developer account and a server component to 
 
 2) Run
 
-`$ CLIENT_ID=<CLIENTID> CLIENT_SECRET=<SECRET> npm install && npm run dev`
+`$ export CLIENT_ID=<CLIENTID>; export CLIENT_SECRET=<SECRET>; npm install && npm run dev`
 
 ### Example app
 
