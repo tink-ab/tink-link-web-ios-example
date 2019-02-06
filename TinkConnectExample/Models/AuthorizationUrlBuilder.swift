@@ -1,6 +1,6 @@
 import Foundation
 
-private let tinkConnectBaseUrl = "https://oauth.tink.se/0.4/authorize"
+private let tinkConnectBaseUrl = "https://oauth.tink.com/0.4/authorize"
 
 struct AuthorizationUrlBuilder {
     let clientId: String
