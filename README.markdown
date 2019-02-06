@@ -22,11 +22,17 @@ The application requires a Tink API developer account and a server component to 
 
 1) Clone the web & server example for [Tink Connect](https://github.com/tink-ab/tink-connect-example)
 
-`$ git clone https://github.com/tink-ab/tink-connect-example`
+```
+$ git clone https://github.com/tink-ab/tink-connect-example
+```
 
 2) Run
 
-`$ export REACT_APP_CLIENT_ID="<CLIENTID>"; export REACT_APP_CLIENT_SECRET="<SECRET>"; npm install && npm run dev`
+```
+$ export REACT_APP_CLIENT_ID="<CLIENTID>"
+$ export REACT_APP_CLIENT_SECRET="<SECRET>"
+$ npm install && npm run dev
+```
 
 ### Example app
 
