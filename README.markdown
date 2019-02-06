@@ -14,11 +14,9 @@ The application requires a Tink API developer account and a server component to 
 
 ### Prerequisites
 
-1) Follow the [getting started guide](https://console.tink.se/getting-started) to create your developer account
-2) Retrieve your [OAuth client credentials](https://console.tink.se/getting-started#2-get-your-oauth-client-details)
-3) Update the [list of allowed](https://console.tink.se/settings) `redirectUris` with a deep link to your app:
-
-`$ curl -X PUT https://api.tink.se/api/v1/oauth/manager/client/<CLIENTID> -u "<EMAIL>:<PASSWORD>" -H 'Content-Type: application/json' -d '{ "redirectUris": ["http://localhost:3000/callback", "demo://authorize"] }'`
+1) Create your developer account at [Tink Console](https://console.tink.com)
+2) Follow the [getting started guide](https://docs.tink.com/resources/getting-started/set-up-your-account) to retrieve your `client_id` and `client_secret`
+3) Add a deep link to your app (eg. `myapp://callback`) to the [list of allowed redirect URIs](https://console.tink.com/apps)
 
 ### Example server
 
@@ -28,7 +26,7 @@ The application requires a Tink API developer account and a server component to 
 
 2) Run
 
-`$ export CLIENT_ID=<CLIENTID>; export CLIENT_SECRET=<SECRET>; npm install && npm run dev`
+`$ export REACT_APP_CLIENT_ID="<CLIENTID>"; export REACT_APP_CLIENT_SECRET="<SECRET>"; npm install && npm run dev`
 
 ### Example app
 
@@ -38,11 +36,11 @@ The application requires a Tink API developer account and a server component to 
 
 ## Resources
 
-* Read our [getting started guide](https://console.tink.se/getting-started)
-* Check out our [tutorials](https://console.tink.se/tutorials) and [demo apps](https://console.tink.se/demo)
-* Check out the [Tink API documentation](https://docs.tink.se)
-* Visit the [Tink Developer Console](https://console.tink.se) for more resources
+* Visit the [Tink Console](https://console.tink.com) to create an account
+* Read our [getting started guide](https://docs.tink.com/resources/getting-started)
+* Explore our [resources](https://docs.tink.com/resources/) for tutorials, libraries and demo apps
+* Check out the [Tink API documentation](https://docs.tink.com/api)
 
 ## Support
 
-👋 We are continuously working on improving the developer experience of our API offering. For any questions or suggestions for improvement, contact us at [api-support@tink.se](mailto:api-support@tink.se).
+👋 We are continuously working on improving the developer experience of our API offering. [Contact us](https://tinkab.atlassian.net/servicedesk/customer/portal/5) for support, questions or suggestions.
