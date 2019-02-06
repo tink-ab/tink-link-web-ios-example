@@ -2,7 +2,7 @@ import SafariServices
 import UIKit
 
 final class WelcomeViewController: UIViewController {
-    private let marketPickerDataSource = ArrayPickerViewDataSource(data: ["SE", "FI", "NO", "DK"])
+    private let marketPickerDataSource = ArrayPickerViewDataSource(data: ["AT", "BE", "DE", "DK", "ES", "FI", "GB", "NO", "SE"])
     private let localePickerDataSource = ArrayPickerViewDataSource(data: ["en_US", "sv_SE", "da_DK", "no_NO", "fi_FI"])
     private var state: String?
     private var demoResponse: DemoResponse?
