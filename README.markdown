@@ -38,6 +38,7 @@ $ npm install && npm run dev
 
 1) Open `TinkConnectExample.xcodeproj` and run the target.
 2) Update [Constants.swift](TinkConnectExample/Constants.swift#L6) with your client identifier
+3) Add `demo://authorize` to the Tink console Redirect URIs.
 3) Build & run
 
 ## Resources
