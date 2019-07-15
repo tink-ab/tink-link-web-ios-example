@@ -31,12 +31,12 @@ $ git clone https://github.com/tink-ab/tink-connect-example
 ```
 $ export REACT_APP_CLIENT_ID="<CLIENTID>"
 $ export REACT_APP_CLIENT_SECRET="<SECRET>"
-$ npm install && npm run dev
+$ npm install && npm run server
 ```
 
 ### Example app
 
-1) Open `TinkConnectExample.xcodeproj` and run the target.
+1) Open `TinkConnectExample.xcodeproj` and run the target
 2) Update [Constants.swift](TinkConnectExample/Constants.swift#L6) with your client identifier
 3) Build & run
 
