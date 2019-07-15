@@ -10,6 +10,7 @@ struct AuthorizationUrlBuilder {
     let locale: String
     let state: String?
     let iframe: Bool
+    let test: Bool
 
     func build() -> URL? {
         guard let baseUrl = URL(string: tinkConnectBaseUrl) else {
@@ -27,7 +28,8 @@ struct AuthorizationUrlBuilder {
             URLQueryItem(name: "market", value: market),
             URLQueryItem(name: "locale", value: locale),
             URLQueryItem(name: "state", value: state),
-            URLQueryItem(name: "iframe", value: String(iframe))
+            URLQueryItem(name: "iframe", value: String(iframe)),
+            URLQueryItem(name: "test", value: String(test))
         ]
 
         return components.url
