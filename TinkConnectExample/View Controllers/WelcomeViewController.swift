@@ -101,7 +101,7 @@ private extension WelcomeViewController {
                     if let data = data {
                         self?.showList(demoResponse: data)
                     } else {
-                        print("Error: No demo data was returned")
+                        print("Error: No demo data was returned. Is the development server running on '\(Constants.demoDataUrl)'?")
                     }
                 }
             }
