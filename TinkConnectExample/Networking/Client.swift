@@ -1,6 +1,6 @@
 import Foundation
 
-struct NetworkClient {
+struct Client {
     private let session: URLSession
 
     private let jsonEncoder = JSONEncoder()

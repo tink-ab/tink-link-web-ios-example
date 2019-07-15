@@ -94,7 +94,8 @@ private extension WelcomeViewController {
 
         print("Received code '\(code)' and state '\(state)'")
 
-        NetworkClient().getDemoData(code: code) { [weak self] data, _, _ in
+        let client = Client()
+        client.getDemoData(code: code) { [weak self] data, _, _ in
             DispatchQueue.main.async {
                 self?.dismiss(animated: true) {
                     if let data = data {
