@@ -1,6 +1,10 @@
 import Foundation
 
 enum Constants {
+    // MARK: - Tink Link
+
+    static let tinkLinkUrl = "https://link.tink.com/1.0/authorize"
+
     // MARK: - OAuth2 configuration
 
     static let clientId = "<#CLIENTID#>"

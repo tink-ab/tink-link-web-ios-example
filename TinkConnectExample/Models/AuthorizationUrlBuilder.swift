@@ -1,7 +1,5 @@
 import Foundation
 
-private let tinkConnectBaseUrl = "https://link.tink.com/1.0/authorize"
-
 struct AuthorizationUrlBuilder {
     let clientId: String
     let redirectUri: String
@@ -13,7 +11,7 @@ struct AuthorizationUrlBuilder {
     let test: Bool
 
     func build() -> URL? {
-        guard let baseUrl = URL(string: tinkConnectBaseUrl) else {
+        guard let baseUrl = URL(string: Constants.tinkLinkUrl) else {
             fatalError("Invalid base URL")
         }
 
