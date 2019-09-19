@@ -49,7 +49,7 @@ final class WelcomeViewController: UIViewController {
         let market = marketPickerDataSource.string(at: marketPicker.selectedRow(inComponent: 0))
         let locale = localePickerDataSource.string(at: languagePicker.selectedRow(inComponent: 0))
 
-        guard let authenticationUrl = AuthorizationUrlBuilder(clientId: Constants.clientId, redirectUri: Constants.redirectUri, scope: Constants.scope, market: market, locale: locale, state: state, iframe: false, test: false).build() else {
+        guard let authenticationUrl = AuthorizationUrlBuilder(clientId: Constants.clientId, redirectUri: Constants.redirectUri, appUri: Constants.appUri, scope: Constants.scope, market: market, locale: locale, state: state, iframe: false, test: false).build() else {
             return print("Error: Couldn't build authentication URL")
         }
 

@@ -3,6 +3,7 @@ import Foundation
 struct AuthorizationUrlBuilder {
     let clientId: String
     let redirectUri: URL
+    let appUri: URL?
     let scope: String
     let market: String
     let locale: String
@@ -22,6 +23,7 @@ struct AuthorizationUrlBuilder {
         components.queryItems = [
             URLQueryItem(name: "client_id", value: clientId),
             URLQueryItem(name: "redirect_uri", value: redirectUri.absoluteString),
+            URLQueryItem(name: "app_uri", value: appUri?.absoluteString),
             URLQueryItem(name: "scope", value: scope),
             URLQueryItem(name: "market", value: market),
             URLQueryItem(name: "locale", value: locale),
