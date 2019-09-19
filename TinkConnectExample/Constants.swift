@@ -8,7 +8,7 @@ enum Constants {
     // MARK: - OAuth2 configuration
 
     static let clientId = "<#CLIENTID#>"
-    static let redirectUri = "demo://authorize"
+    static let redirectUri = URL(string: "demo://authorize")!
     static let scope = "accounts:read,transactions:read,investments:read,user:read"
 
     // MARK: - Demo server
