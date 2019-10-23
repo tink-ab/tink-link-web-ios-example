@@ -16,7 +16,7 @@ The application requires a Tink API developer account and a server component to 
 
 1) Create your developer account at [Tink Console](https://console.tink.com)
 2) Follow the [getting started guide](https://docs.tink.com/resources/getting-started/set-up-your-account) to retrieve your `client_id` and `client_secret`
-3) Add a deep link to the example app (`demo://authorize`) to the [list of allowed redirect URIs](https://console.tink.com/apps)
+3) Add a deep link to the example app (`demo://authorize`) to the [list of redirect URIs under your app's settings](https://console.tink.com/overview)
 
 ### Example server
 
