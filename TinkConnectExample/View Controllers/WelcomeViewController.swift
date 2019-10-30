@@ -23,6 +23,7 @@ final class WelcomeViewController: UIViewController {
         super.viewDidLoad()
 
         NotificationCenter.default.addObserver(self, selector: #selector(accessCodeReceived(_:)), name: .accessCodeReceived, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(errorReceived(_:)), name: .errorReceived, object: nil)
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -73,7 +74,7 @@ extension WelcomeViewController {
     }
 }
 
-// MARK: - Notification
+// MARK: - Notifications
 
 private extension WelcomeViewController {
     @objc private func accessCodeReceived(_ notification: Notification) {
@@ -106,5 +107,15 @@ private extension WelcomeViewController {
                 }
             }
         }
+    }
+
+    @objc private func errorReceived(_ notification: Notification) {
+        let errorReceivedNotification = ErrorReceivedNotification(notification: notification)
+
+        if let error = errorReceivedNotification?.error  {
+            print("Error: \(error)")
+        }
+
+        presentedViewController?.dismiss(animated: true, completion: nil)
     }
 }
