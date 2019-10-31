@@ -36,9 +36,9 @@ $ npm install && npm run server
 
 ### Example app
 
-1) Open `TinkConnectExample.xcodeproj` and run the target
+1) Open `TinkConnectExample.xcodeproj`
 2) Update [Constants.swift](TinkConnectExample/Constants.swift#L6) with your client identifier
-3) Build & run
+3) Build and run
 
 ## Resources
 
