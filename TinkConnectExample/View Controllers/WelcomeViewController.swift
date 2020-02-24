@@ -112,7 +112,7 @@ private extension WelcomeViewController {
     @objc private func errorReceived(_ notification: Notification) {
         let errorReceivedNotification = ErrorReceivedNotification(notification: notification)
 
-        if let error = errorReceivedNotification?.error  {
+        if let error = errorReceivedNotification?.error {
             print("Error: \(error)")
         }
 
