@@ -2,8 +2,31 @@ import SafariServices
 import UIKit
 
 final class WelcomeViewController: UIViewController {
-    private let marketPickerDataSource = ArrayPickerViewDataSource(data: ["AT", "BE", "DE", "DK", "ES", "FI", "GB", "NL", "NO", "SE"])
-    private let localePickerDataSource = ArrayPickerViewDataSource(data: ["en_US", "sv_SE", "da_DK", "no_NO", "nl_NL", "fi_FI", "de_DE", "es_ES", "fr_FR"])
+    private let marketPickerDataSource = ArrayPickerViewDataSource(data: ["AT",
+                                                                          "BE",
+                                                                          "DE",
+                                                                          "DK",
+                                                                          "ES",
+                                                                          "FI",
+                                                                          "FR",
+                                                                          "GB",
+                                                                          "IT",
+                                                                          "NL",
+                                                                          "NO",
+                                                                          "PT",
+                                                                          "SE"])
+
+    private let localePickerDataSource = ArrayPickerViewDataSource(data: ["da_DK",
+                                                                          "de_DE",
+                                                                          "en_US",
+                                                                          "es_ES",
+                                                                          "fi_FI",
+                                                                          "fr_FR",
+                                                                          "nl_NL",
+                                                                          "no_NO",
+                                                                          "pt_PT",
+                                                                          "sv_SE"])
+
     private var state: String?
     private var demoResponse: DemoResponse?
 
@@ -112,7 +135,7 @@ private extension WelcomeViewController {
     @objc private func errorReceived(_ notification: Notification) {
         let errorReceivedNotification = ErrorReceivedNotification(notification: notification)
 
-        if let error = errorReceivedNotification?.error  {
+        if let error = errorReceivedNotification?.error {
             print("Error: \(error)")
         }
 
