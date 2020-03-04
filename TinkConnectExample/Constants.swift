@@ -19,7 +19,7 @@ enum Constants {
     static let redirectUri = URL(string: "demo://authorize")!
 
     /// This is the deep link URI that will be used to return to your app from a thirdparty authentication app
-    static let appUri = URL(string: "demo://")!
+    static let appUri = URL(string: "demo://open")!
 
     // MARK: - Demo server
 
